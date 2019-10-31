@@ -17,10 +17,10 @@ namespace WebApplication1
         public static string AadInstance = "https://login.microsoftonline.com/";
         public static string AppIdUri = "api://45d480b9-7ef9-41cb-93a2-4c176039665b";
         public static string ClientId = "45d480b9-7ef9-41cb-93a2-4c176039665b";
-        public static string Tenant = "jasonvenemagmail.onmicrosoft.com";
+        public static string Tenant = ""; // e.g. contoso.onmicrosoft.com
         public static string ClientSecret = ""; // Client secret for this app from AAD portal
         public static string TenantId = "bce15b5e-3b8e-47c8-b79a-cd02f8002a4c";
-        public static string Authority = AadInstance + Tenant;
+        public static string Authority;
         public static string Resource = ""; // Azure AD App ID URI for app to connect to
 
         public Startup(IHostingEnvironment env)
@@ -48,6 +48,8 @@ namespace WebApplication1
         {
             ClientSecret = Configuration["AzureAd:ClientSecret"];
             Resource = Configuration["AzureAd:Resource"];
+            Tenant = Configuration["AzureAd:Tenant"];
+            Authority = AadInstance + Tenant;
 
             services
                .AddAuthentication(sharedOptions =>
