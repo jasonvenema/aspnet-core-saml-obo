@@ -1,0 +1,66 @@
+<Assertion ID="_27175724-ba7a-49b6-bdc4-203f54520800" IssueInstant="2019-10-29T03:18:22.819Z" Version="2.0" 
+    xmlns="urn:oasis:names:tc:SAML:2.0:assertion">
+    <Issuer>https://sts.windows.net/bce15b5e-3b8e-47c8-b79a-cd02f8002a4c/</Issuer>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <Reference URI="#_27175724-ba7a-49b6-bdc4-203f54520800">
+                <Transforms>
+                    <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </Transforms>
+                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <DigestValue>iIRGsQ8gxroVYZvg/pFkgH/mvcpJB9BUtSXjcDlZSWE=</DigestValue>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue>t43QZqMafTNfm4uoDypckNBG8hh49ixTFTvYZmsmTn37RgKC1pCMeFgs9Ly4EIkemz9xKqJ0Dqepdlx/RmKz88nMCYJUT7j5mlBz7u1RR3jcXRCurnPX5JhGTfmlJbNFwdy9W+WCuvB2NXQ23IPtbV5ocFjMIbtkCFeZ5h9xGRszHTghowcgXihx5XZIGSJK6ItDevBG0L/r5SMhbD1YGP2PuXQAT1R97bL3VBkvAeQE8POjLbRBhbZx2t51ONElTCtLLwAHBw5FxMuyXJQ9OwhPsqrAqQuFdfyut6EIVb2v0ySXrgWzdvI4EC7E0dUxv5qHNrgzicchwaBc9R8xYg==</SignatureValue>
+        <KeyInfo>
+            <X509Data>
+                <X509Certificate>MIIC8DCCAdigAwIBAgIQE/3QbnNwGJBCM8r7nj4Y4DANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0xOTA3MTEwMzQzMzlaFw0yMjA3MTEwMzQzMzlaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwJReAYLvOR/3fxBhCEgJUV/GIwqeDJCJ6FC3zN/f16WteofJCsBMU6Ewodw5kkuFBWEAZ36LLAmGnloOalLug5wnM2Aj3pJ3xD6/oewL2S+0v/gctW8AuMa9jM+s3ea0alXvrYKoZcGJh5HgMqcQT/vzw9AOmxoQPVAbrzVps8CnajkVUcT6pI0IiEGAIWxCFSO7CrJbrW/EiufG5s8z01huXOjOGiGevgdWZ5FiqNxqxIPkn53suLuudBdV4FaZEDZaaoQLSQhd6hfbiF17mbp8VYa3rA6IiYUFNEeUQen6m6ecrKeqBudTCSzWG+kuXZD4yxcPyJx/Ec2Mhf+6SQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAbsI5AfSP1dmVPlbtNlP30RXNp+xL1co56tdIBhAs5yyJQ3sUF2Z3NN5hNjPyZRh1GIGGRG5tDF2+OKJg6VE88gN/l3QcT5Ug+XX+2mB9F26UmA6qT00xglSrVZnTIQqKVEdbcsPNSmdqvacz7nwT7yZi4YfmgB7qxQAs2utYJ+Dl6DJkan7JegjGdCHYfa/Z1t2x/lyHU/zDDCwIOk0Un//ozByq8bmaNCsCgHdbV8Lil0/LMtM64qjNJXvlOwHW03xAh7X2duqAUGwBzx10zzDNyvPWXusJCf8o+bT47LYDJe9eNZ4ZfwimOheuX+RC4O+Dmc67XmjqMkUxQGyEv</X509Certificate>
+            </X509Data>
+        </KeyInfo>
+    </Signature>
+    <Subject>
+        <NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">guy@jasonvenemagmail.onmicrosoft.com</NameID>
+        <SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+            <SubjectConfirmationData NotOnOrAfter="2019-10-29T03:23:22.819Z" Recipient="https://us1.hana.ondemand.com/ba5916745"/>
+        </SubjectConfirmation>
+    </Subject>
+    <Conditions NotBefore="2019-10-29T03:13:22.819Z" NotOnOrAfter="2019-10-29T04:17:14.819Z">
+        <AudienceRestriction>
+            <Audience>https://zdowhost-alias.apimanagement.us1.hana.ondemand.com</Audience>
+        </AudienceRestriction>
+    </Conditions>
+    <AttributeStatement>
+        <Attribute Name="http://schemas.microsoft.com/identity/claims/tenantid">
+            <AttributeValue>bce15b5e-3b8e-47c8-b79a-cd02f8002a4c</AttributeValue>
+        </Attribute>
+        <Attribute Name="http://schemas.microsoft.com/identity/claims/objectidentifier">
+            <AttributeValue>f00ac6a1-0784-46f3-8f85-fc6f39b6ef39</AttributeValue>
+        </Attribute>
+        <Attribute Name="http://schemas.microsoft.com/identity/claims/displayname">
+            <AttributeValue>Guy Person</AttributeValue>
+        </Attribute>
+        <Attribute Name="http://schemas.microsoft.com/identity/claims/identityprovider">
+            <AttributeValue>https://sts.windows.net/bce15b5e-3b8e-47c8-b79a-cd02f8002a4c/</AttributeValue>
+        </Attribute>
+        <Attribute Name="http://schemas.microsoft.com/claims/authnmethodsreferences">
+            <AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password</AttributeValue>
+        </Attribute>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname">
+            <AttributeValue>Guy</AttributeValue>
+        </Attribute>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname">
+            <AttributeValue>Person</AttributeValue>
+        </Attribute>
+        <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name">
+            <AttributeValue>guy@jasonvenemagmail.onmicrosoft.com</AttributeValue>
+        </Attribute>
+    </AttributeStatement>
+    <AuthnStatement AuthnInstant="2019-10-29T03:17:13.158Z">
+        <AuthnContext>
+            <AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef>
+        </AuthnContext>
+    </AuthnStatement>
+</Assertion>

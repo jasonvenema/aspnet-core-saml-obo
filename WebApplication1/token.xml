@@ -1,0 +1,65 @@
+"<Assertion ID=\"_fb244b9f-2d2b-4ecc-8b78-328310b50300\" IssueInstant=\"2019-09-30T19:12:39.282Z\" Version=\"2.0\" 
+    xmlns=\"urn:oasis:names:tc:SAML:2.0:assertion\">
+    <Issuer>https://sts.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/</Issuer>
+    <Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\">
+        <SignedInfo>
+            <CanonicalizationMethod Algorithm=\"http://www.w3.org/2001/10/xml-exc-c14n#\" />
+            <SignatureMethod Algorithm=\"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\" />
+            <Reference URI=\"#_fb244b9f-2d2b-4ecc-8b78-328310b50300\">
+                <Transforms>
+                    <Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\" />
+                    <Transform Algorithm=\"http://www.w3.org/2001/10/xml-exc-c14n#\" />
+                </Transforms>
+                <DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha256\" />
+                <DigestValue>c8j+OvYTN88RxqKSDnmg05wbsKV9INfYp5Zga9djmoQ=</DigestValue>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue>h9KLsPAAtgfgYfcbYoGO5rVPntHh1/ftd+4uWyqLTTPQ814fxPPNKolCUP49bWE7fvfrqK/OiMCA4q8WZxxmoK0YDXKrh7DSxNTPvQsrDPy7dToZIcsotMNPkyufEYAY7L08OBxmNZS+o6otuHMQhmoWDnr3prlQBWNyLZ6vXGYrQatkmzF04w9hfGjZChs8JMEigj4IoHvH8EdWB8Xf5DABC3y7XyhKDdUJBT7B0fY/bY0cOszNHjO89kCRSzMCjELakADuOr42boF/3AvDpPCFEakk502lbreHkgzFixe0fLyiFS14rrIPoOr3bZccKs0J4+X3eirM3wbY10Vnvg==</SignatureValue>
+        <KeyInfo>
+            <X509Data>
+                <X509Certificate>MIIDBTCCAe2gAwIBAgIQU10WcpDECatD1ywgv0TNJjANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDEyJhY2NvdW50cy5hY2Nlc3Njb250cm9sLndpbmRvd3MubmV0MB4XDTE5MDgyNTAwMDAwMFoXDTI0MDgyNDAwMDAwMFowLTErMCkGA1UEAxMiYWNjb3VudHMuYWNjZXNzY29udHJvbC53aW5kb3dzLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKdg88TmYlhB4bVWr7sCJq8k0cVuJCdJmwNZW16J+edA1Jyg2QjWWs7Z6PB6TpejUm1W1vkCw8+VTqgp/jw70iEXMPtoayT0ZwjaG+MhhLgu7/XT1aTwxUYlKznMAmyWpOsbCvTxLF/BUP6JxRzumCZI7BRvEtpzIYESviXVEVHLo/aWssEgbVvXXXqo0D4Aj22SbZN/UXqLqAWDZvcYsIUzdCJ2PUbfTylIeHEXrYNznikNhPEzlYdZx3k09hyCGJwIAexElANO8GAbr3reFBnpgtknX6U0lpNmKs42TjVvKdNYSYPcfJXEnsmkFTsUz/0o0KD/fZWtVfJQKxd+asUCAwEAAaMhMB8wHQYDVR0OBBYEFPBE/OYhU7DwWnEa6luL8L+MZwbHMA0GCSqGSIb3DQEBCwUAA4IBAQAYyA81g/dfsm/AeUyDfzObRaEdKinKI5GUFUvJXDobED7f6NL+ECyULBEVm/ksZBrg6f0aPTDnSFVsZIfMogXc0KfJrII1lnXucbt1LCOmjdlf54J1R/mn9dkHyZ3pfoZtpqcXlKFnRCurn864XqRQFgBSG39xUjXXUR5vWSrp3mHlil+W9Z9RTImNmkXnSJDosYLEvCUYyqarV8rKj6rBfaBdqP3F5s4GwIdjsZ13YfkD4c+meX3W/9x74awB5ys+p78c7IjnO8mQB9kPvY9wEnGLDfLQEC+A0af81ybvevMraFfwZtsq/FYJEMnn6hKkTUeb1kPpVdJLVN4JqiUM</X509Certificate>
+            </X509Data>
+        </KeyInfo>
+    </Signature>
+    <Subject>
+        <NameID Format=\"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent\">EI6iFKO8Ha-1LJURqHdoIcwUHUikqMzS8E-LJH4y_H0</NameID>
+        <SubjectConfirmation Method=\"urn:oasis:names:tc:SAML:2.0:cm:bearer\" />
+    </Subject>
+    <Conditions NotBefore=\"2019-09-30T19:07:39.277Z\" NotOnOrAfter=\"2019-09-30T20:12:39.277Z\">
+        <AudienceRestriction>
+            <Audience>api://0a4f3144-0cf7-4734-bbf9-54b38afd04dc</Audience>
+        </AudienceRestriction>
+    </Conditions>
+    <AttributeStatement>
+        <Attribute Name=\"http://schemas.microsoft.com/identity/claims/tenantid\">
+            <AttributeValue>72f988bf-86f1-41af-91ab-2d7cd011db47</AttributeValue>
+        </Attribute>
+        <Attribute Name=\"http://schemas.microsoft.com/identity/claims/objectidentifier\">
+            <AttributeValue>62346242-12b3-47be-b138-f857e3302888</AttributeValue>
+        </Attribute>
+        <Attribute Name=\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\">
+            <AttributeValue>javene@microsoft.com</AttributeValue>
+        </Attribute>
+        <Attribute Name=\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname\">
+            <AttributeValue>Venema</AttributeValue>
+        </Attribute>
+        <Attribute Name=\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname\">
+            <AttributeValue>Jason</AttributeValue>
+        </Attribute>
+        <Attribute Name=\"http://schemas.microsoft.com/identity/claims/displayname\">
+            <AttributeValue>Jason Venema</AttributeValue>
+        </Attribute>
+        <Attribute Name=\"http://schemas.microsoft.com/identity/claims/identityprovider\">
+            <AttributeValue>https://sts.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/</AttributeValue>
+        </Attribute>
+        <Attribute Name=\"http://schemas.microsoft.com/claims/authnmethodsreferences\">
+            <AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/x509</AttributeValue>
+            <AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue>
+        </Attribute>
+    </AttributeStatement>
+    <AuthnStatement AuthnInstant=\"2019-09-30T14:54:42.123Z\">
+        <AuthnContext>
+            <AuthnContextClassRef>http://schemas.microsoft.com/claims/multipleauthn</AuthnContextClassRef>
+        </AuthnContext>
+    </AuthnStatement>
+</Assertion>"
